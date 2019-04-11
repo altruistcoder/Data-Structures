@@ -20,9 +20,9 @@ int main()
     cout<<"Enter the elements of array: "<<endl;
     for(i=0;i<N;i++)
         cin>>A[i];
-        Bubblesort(A,N);
-        cout<<"Sorted array: "<<endl;
-        for(i=0;i<N;i++)
-            cout<<A[i]<<" ";
+    Bubblesort(A,N);
+    cout<<"Sorted array: "<<endl;
+    for(i=0;i<N;i++)
+    	cout<<A[i]<<" ";
     return 0;
 }

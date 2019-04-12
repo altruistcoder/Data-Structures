@@ -36,6 +36,20 @@ This is a repository containing various C++ Programs to understand the basic con
 
   C++ Code for implementing Linear Search algorithm.
 
+* [Parenthesis Balancing](https://github.com/altruistcoder/Data-Structures/blob/master/balanced_parenthesis_check.cpp):
 
+  C++ Code for checking the balancing of Parenthesis.
+
+* [Generate Balanced Parenthesis](https://github.com/altruistcoder/Data-Structures/blob/master/generate_parenthesis.cpp):
+
+  C++ Code to generate balanced parenthesis of the given order.
+
+* [Decreasing Frequency-Wise Array Sorting](https://github.com/altruistcoder/Data-Structures/blob/master/decreasing_frequency_wise_sorting.cpp):
+
+  C++ Code for performing decreasing frequency-wise sorting of a given array.
+
+* [Checking Sorting of Array with atmost One Swapping of Elements](https://github.com/altruistcoder/Data-Structures/blob/master/check_sort_one_swap.cpp):
+
+  C++ Code for checking whether it is possible or not to sort the given array by doing atmost one swapping of elements of array.
 
 

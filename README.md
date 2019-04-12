@@ -24,3 +24,18 @@ This is a repository containing various C++ Programs to understand the basic con
 
   C++ Code for implementing Selection Sort algorithm.
 
+* [Recursive Binary Search](https://github.com/altruistcoder/Data-Structures/blob/master/Searching%20Programs/binary_search_recursive.cpp):
+
+  C++ Code for implementing Binary Search algorithm recursively.
+
+* [Iterative Binary Search](https://github.com/altruistcoder/Data-Structures/blob/master/Searching%20Programs/binary_search_iterative.cpp):
+
+  C++ Code for implementing Binary Search algorithm iteratively.
+
+* [Linear Search](https://github.com/altruistcoder/Data-Structures/blob/master/Searching%20Programs/linear_search.cpp):
+
+  C++ Code for implementing Linear Search algorithm.
+
+
+
+

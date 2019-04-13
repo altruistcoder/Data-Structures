@@ -36,6 +36,15 @@ This is a repository containing various C++ Programs to understand the basic con
 
   C++ Code for implementing Linear Search algorithm.
 
+* [0-1 Knapsack](https://github.com/altruistcoder/Data-Structures/blob/master/01_knapsack.cpp):
+
+  C++ Code for solving the 0-1 Knapsack problem using Dynamic Programming approach.
+
+* [Fractional Knapsack](https://github.com/altruistcoder/Data-Structures/blob/master/fractional_knapsack.cpp):
+
+  C++ Code for solving the Fractional Knapsack problem using Greedy approach. 
+
+
 * [Parenthesis Balancing](https://github.com/altruistcoder/Data-Structures/blob/master/balanced_parenthesis_check.cpp):
 
   C++ Code for checking the balancing of Parenthesis.

@@ -12,6 +12,10 @@ This is a repository containing various C++ Programs to understand the basic con
 
   C++ Code for implementing Quick Sort algorithm.
 
+* [Randomized Quick Sort](https://github.com/altruistcoder/Data-Structures/blob/master/Sorting%20Programs/quick_sort_randomized.cpp):
+
+  C++ Code for implementing Randomized version of Quick Sort algorithm.
+
 * [Insertion Sort](https://github.com/altruistcoder/Data-Structures/blob/master/Sorting%20Programs/insertion_sort.cpp):
 
   C++ Code for implementing Insertion Sort algorithm.

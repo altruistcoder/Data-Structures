@@ -65,4 +65,7 @@ This is a repository containing various C++ Programs to understand the basic con
 
   C++ Code for checking whether it is possible or not to sort the given array by doing atmost one swapping of elements of array.
 
+* [Anti-Clockwise Rotation of Array by 90 ](https://github.com/altruistcoder/Data-Structures/blob/master/90_degree_rotate_matrix.cpp):
+
+  C++Code for rotating the elements of the matrix by 90 degrees in anti-clockwise direction.
 

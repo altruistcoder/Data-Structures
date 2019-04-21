@@ -67,5 +67,5 @@ This is a repository containing various C++ Programs to understand the basic con
 
 * [Anti-Clockwise Rotation of Array by 90 ](https://github.com/altruistcoder/Data-Structures/blob/master/90_degree_rotate_matrix.cpp):
 
-  C++Code for rotating the elements of the matrix by 90 degrees in anti-clockwise direction.
+  C++ Code for rotating the elements of the matrix by 90 degrees in anti-clockwise direction.
 

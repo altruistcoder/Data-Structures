@@ -74,3 +74,19 @@ This is a repository containing various C++ Programs to understand the basic con
 
   C++ Code for rotating the elements of the matrix by 90 degrees in clockwise direction.
 
+* [Finding Pair of Elements with given Sum in an Array](https://github.com/altruistcoder/Data-Structures/blob/master/pair_with_given_sum.cpp):
+
+  C++ Code for finding the pair of elements in an array whose sum is equal to a particular sum entered by the user.
+
+* [Finding Pair of Elements with given Sum in an Array using Hashing Method](https://github.com/altruistcoder/Data-Structures/blob/master/pair_with_given_sum_hashing.cpp):
+
+  C++ Code for finding all the pairs of elements in an array whose sum is equal to a particular sum entered by the user by using the hashing set method.
+
+* [Finding the Pythgorean Triplets present in an Array](https://github.com/altruistcoder/Data-Structures/blob/master/find_pythagorean_triplet_in_array.cpp):
+
+  C++ Code for finding the triplet of elements present in an array which act as a Pythagorean Triplet.
+
+* [Generating the Pythgorean Triplets till a particular Limit](https://github.com/altruistcoder/Data-Structures/blob/master/generate_pythagorean_triplet.cpp):
+
+  C++ Code for generating the Pythagorean Triplets having values less than a limit entered by a user.
+

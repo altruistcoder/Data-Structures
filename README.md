@@ -90,3 +90,7 @@ This is a repository containing various C++ Programs to understand the basic con
 
   C++ Code for generating the Pythagorean Triplets having values less than a limit entered by a user.
 
+* [Number Occurring Odd no. of Times in an Array](https://github.com/altruistcoder/Data-Structures/blob/master/number_occurring_odd_times.cpp):
+
+  C++ Code for finding the number which occurs odd no. of times in the given array.
+

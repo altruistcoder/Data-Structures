@@ -17,7 +17,6 @@ bool findPairs(int A[], int N, int s)
     return r;
 }
 
-/* Driver program to test abaove function */
 int main()
 {
     int A[200], N, i, s;

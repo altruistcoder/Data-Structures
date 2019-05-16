@@ -98,5 +98,7 @@ This is a repository containing various C++ Programs to understand the basic con
 
   C++ Code for finding the largest contiguous sum present in the given array.
 
+* [Second Largest Element in an Array](https://github.com/altruistcoder/Data-Structures/blob/master/second_largest_in_array.cpp):
 
+  C++ Code for finding the second largest element present in the given array.
 

@@ -102,8 +102,7 @@ This is a repository containing various C++ Programs to understand the basic con
 
   C++ Code for finding the second largest element present in the given array.
 
-* [First Non-Repeating Character in an String](https://github.com/altruistcoder/Data-Structures-Python/blob/master/first_non_repeating_character.cpp):
+* [First Non-Repeating Character in an String](https://github.com/altruistcoder/Data-Structures/blob/master/first_non_repeating_character.cpp):
 
   C++ Code for finding the first non-repeating character present in the given string.
-
 

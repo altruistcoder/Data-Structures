@@ -4,6 +4,10 @@ This is a repository containing various C++ Programs to understand the basic con
 
 ## Programs
 
+* [Queue Using Stack](https://github.com/altruistcoder/Data-Structures/blob/master/Queue/queue_using_stack.cpp):
+
+  C++ Code for implementing a queue using stacks.
+
 * [Merge Sort](https://github.com/altruistcoder/Data-Structures/blob/master/Sorting%20Programs/merge_sort.cpp):
 
   C++ Code for implementing Merge Sort algorithm.

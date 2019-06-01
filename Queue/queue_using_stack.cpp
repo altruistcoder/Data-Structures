@@ -6,33 +6,37 @@ struct Queue {
     // Add an item to the queue
     void enQueue(int x)
     {
-        // Push item into the first stack (s1)
+        // Move all elements from first stack (s1) to second stack (s2)
+        while (!s1.empty()) {
+            s2.push(s1.top());
+            s1.pop();
+        }
+        // Push item into first stack (s1)
         s1.push(x);
+        // Push everything back to first stack (s1)
+        while (!s2.empty()) {
+            s1.push(s2.top());
+            s2.pop();
+        }
     }
+
     // Remove an item from the queue
     int deQueue()
     {
-        // If both stacks are empty, then exit
-        if (s1.empty() && s2.empty()){
-            cout << "Q is empty";
-            exit(0);
+        // If first stack (s1) is empty, then exit
+        if (s1.empty()) {
+            cout << "Queue is Empty, thus deletion cannot be performed\n";
+            return -1;
         }
 
-        // If second stack (s2) is empty, move elements from first stack (s1) to second stack (s2)
-        if (s2.empty()) {
-            while (!s1.empty()){
-                s2.push(s1.top());
-                s1.pop();
-            }
-        }
-        // Return the top item from secodn stack (s2)
-        int x = s2.top();
-        s2.pop();
+        // Else return top of first stack (s1)
+        int x = s1.top();
+        s1.pop();
         return x;
     }
     void sizeQueue()
     {
-        cout<<"Size of the Queue: "<<s1.size()+s2.size()<<endl;
+        cout<<"Size of the Queue: "<<s1.size()<<endl;
     }
 };
 
@@ -40,32 +44,31 @@ int main()
 {
     Queue q;
     int x, data;
-    char ch;
     do
     {
-    cout<<"\t Main Menu \n";
-    cout<<"\t 1. Insertion to Queue \n";
-    cout<<"\t 2. Deletion from Queue \n";
-    cout<<"\t 3. Size of Queue\n";
-    cout<<"\t 4. Quit \n";
-    cout<<"Enter your choice: ";
-    cin>>x;
-    switch(x)
-    {
-        case 1: cout<<"Enter the value to be inserted in Queue: ";
-                cin>>data;
-                q.enQueue(data);
-                break;
-        case 2: cout<<"The deleted element is: "<<q.deQueue()<<endl;
-                break;
-        case 3: q.sizeQueue();
-                break;
-        case 4: exit(0);
-        default: cout<<"Wrong Choice Entered\n";
+        cout<<"\nMain Menu: \n";
+        cout<<"1. Insertion to Queue \n";
+        cout<<"2. Deletion from Queue \n";
+        cout<<"3. Size of Queue\n";
+        cout<<"4. Quit\n";
+        cout<<"Enter your choice (1-4): ";
+        cin>>x;
+        switch(x)
+        {
+            case 1: cout<<"Enter the value to be inserted in Queue: ";
+                    cin>>data;
+                    q.enQueue(data);
+                    break;
+            case 2: data = q.deQueue();
+                    if(data!=-1)
+                        cout<<"The deleted element is: "<<data<<endl;
+                    break;
+            case 3: q.sizeQueue();
+                    break;
+            case 4: exit(0);
+            default: cout<<"Invalid Choice Entered\n";
+        }
     }
-    cout<<"Do you want to go to the main menu (y/n): ";
-    cin>>ch;
-    }
-    while(ch=='Y'||ch=='y');
+    while(true);
     return 0;
 }

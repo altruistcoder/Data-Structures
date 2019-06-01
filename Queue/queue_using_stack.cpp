@@ -6,37 +6,33 @@ struct Queue {
     // Add an item to the queue
     void enQueue(int x)
     {
-        // Move all elements from first stack (s1) to second stack (s2)
-        while (!s1.empty()) {
-            s2.push(s1.top());
-            s1.pop();
-        }
-        // Push item into first stack (s1)
+        // Push item into the first stack (s1)
         s1.push(x);
-        // Push everything back to first stack (s1)
-        while (!s2.empty()) {
-            s1.push(s2.top());
-            s2.pop();
-        }
     }
-
     // Remove an item from the queue
     int deQueue()
     {
-        // If first stack (s1) is empty, then exit
-        if (s1.empty()) {
+        // If both stacks are empty, then exit
+        if (s1.empty() && s2.empty()){
             cout << "Queue is Empty, thus deletion cannot be performed\n";
             return -1;
         }
 
-        // Else return top of first stack (s1)
-        int x = s1.top();
-        s1.pop();
+        // If second stack (s2) is empty, move elements from first stack (s1) to second stack (s2)
+        if (s2.empty()) {
+            while (!s1.empty()){
+                s2.push(s1.top());
+                s1.pop();
+            }
+        }
+        // Return the top item from second stack (s2)
+        int x = s2.top();
+        s2.pop();
         return x;
     }
     void sizeQueue()
     {
-        cout<<"Size of the Queue: "<<s1.size()<<endl;
+        cout<<"Size of the Queue: "<<s1.size()+s2.size()<<endl;
     }
 };
 
@@ -45,7 +41,7 @@ int main()
     Queue q;
     int x, data;
     do
-    {
+        {
         cout<<"\nMain Menu: \n";
         cout<<"1. Insertion to Queue \n";
         cout<<"2. Deletion from Queue \n";

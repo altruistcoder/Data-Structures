@@ -4,13 +4,21 @@ This is a repository containing various C++ Programs to understand the basic con
 
 ## Programs
 
-* [Queue Using Stack](https://github.com/altruistcoder/Data-Structures/blob/master/Queue/queue_using_stack.cpp):
+* [Queue Using Two Stacks](https://github.com/altruistcoder/Data-Structures/blob/master/Queue/queue_using_stack.cpp):
 
   C++ Code for implementing a queue using two stacks.
 
-* [Queue Using Stack](https://github.com/altruistcoder/Data-Structures/blob/master/Queue/queue_using_single_stack.cpp):
+* [Queue Using Single Stack](https://github.com/altruistcoder/Data-Structures/blob/master/Queue/queue_using_single_stack.cpp):
 
   C++ Code for implementing a queue using single stack (using recursion).
+
+* [Stack Using Two Queues](https://github.com/altruistcoder/Data-Structures/blob/master/Stack/stack_using_two_queues.cpp):
+
+  C++ Code for implementing a stack using two queues.
+
+* [Stack Using Single Queue](https://github.com/altruistcoder/Data-Structures/blob/master/Stack/stack_using_single_queue.cpp):
+
+  C++ Code for implementing a stack using single queue.
 
 * [Merge Sort](https://github.com/altruistcoder/Data-Structures/blob/master/Sorting%20Programs/merge_sort.cpp):
 

@@ -4,6 +4,10 @@ This is a repository containing various C++ Programs to understand the basic con
 
 ## Programs
 
+* [Queue Implementation](https://github.com/altruistcoder/Data-Structures/blob/master/Queue/queue.cpp):
+
+  C++ Code for implemention of a queue.
+
 * [Queue Using Two Stacks](https://github.com/altruistcoder/Data-Structures/blob/master/Queue/queue_using_stack.cpp):
 
   C++ Code for implementing a queue using two stacks.

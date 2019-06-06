@@ -1,87 +1,83 @@
-#include<stdio.h>
-#include<conio.h>
-#define N 3
-int FRONT=-1,REAR=-1,QUEUE[3];
-void INSERTION(int DATA)
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+#define N 100
+
+class Queue
 {
-if((FRONT==0&&REAR==N-1)||(FRONT==REAR+1))
- printf("QUEUE Overflow");
- else
- {
- printf("Enter the data to be stored: ");
- scanf("%d",&DATA);
- if(FRONT==-1)    //Queue is Empty
- FRONT=0,REAR=0;
- else
- if(REAR==N-1)
- REAR=0;
- else
- REAR=REAR+1;
- QUEUE[REAR]=DATA;
- }
- }
-void DELETION()
- {
- if(FRONT==-1)
- printf("Queue Underflow");
- else
- if(FRONT==REAR)
- FRONT=-1,REAR=-1;
- else
- if(FRONT==N-1)
- FRONT=0;
- else
- FRONT=FRONT+1;
- }
-void TRAVERSE()
- {
- int i;
- if(FRONT==-1&&REAR==-1)
- printf("Queue is Empty");
- else
- {
- printf("Elements of Queue: \n");
- if(REAR<FRONT)
- {
- for(i=0;i<=REAR;i++)
- printf("%d ",QUEUE[i]);
- for(i=FRONT;i<=N-1;i++)
- printf("%d ",QUEUE[i]);
- }
- else
- {
- for(i=FRONT;i<=REAR;i++)
- printf("%d ",QUEUE[i]);
- }
- }
- }
-void main()
+    int front,rear,queue[N];
+    public:
+        Queue()
+        {
+            front=rear=-1;
+        }
+        void enQueue(int data)
+        {
+            if(rear==N-1)
+            {
+                cout<<"Queue if Full (Queue Overflow)\n";
+                return;
+            }
+            if(rear==-1)
+                front=rear=0;
+            else
+                rear++;
+            queue[rear] = data;
+        }
+        void deQueue()
+        {
+            if(front==-1)
+             {
+                 cout<<"Queue is Empty (Queue Underflow)\n";
+                 return;
+             }
+             cout<<"Deleted element from queue is: "<<queue[front]<<endl;
+             if(front==rear)
+                front=rear=-1;
+             else
+                front++;
+        }
+        void traversal()
+        {
+            if(front==-1)
+             {
+                 cout<<"Queue is Empty (Queue Underflow)\n";
+                 return;
+             }
+            cout<<"The elements present in the queue: \n";
+            for(int i=front;i<=rear;i++)
+                cout<<queue[i]<<" ";
+            cout<<endl;
+        }
+};
+
+int main()
 {
-int k,DATA;
-char ch='Y';
-clrscr();
-printf("\t\t\t NAME: RISHABH AGGARWAL \n");
-while(ch=='Y'||ch=='y')
-{
-printf("\t Choose the operation you want to perform: \n");
-printf("\t 1. Insertion \n");
-printf("\t 2. Deletion \n");
-printf("\t 3. Traversing \n");
-printf("\t Enter your choice(1-3): ");
-scanf("%d",&k);
-switch(k)
-{
-case 1: INSERTION(DATA);
-	break;
-case 2: DELETION();
-	break;
-case 3: TRAVERSE();
-	break;
-default: printf("Wrong Choice entered\n");
-}
-printf("\n Do you want to perform another operation(Y/y): ");
-fflush(stdin);
-scanf("%c",&ch);
-}
-getch();
+    Queue q;
+    int x,data;
+    do
+    {
+        cout<<"\nChoose the operation you want to perform: \n";
+        cout<<"1. Insertion to Queue \n";
+        cout<<"2. Deletion from Queue \n";
+        cout<<"3. Traversal of Queue \n";
+        cout<<"4. Quit \n";
+        cout<<"Enter your choice(1-4): ";
+        cin>>x;
+        switch(x)
+        {
+            case 1: cout<<"Enter the data to be stored: ";
+                    cin>>data;
+                    q.enQueue(data);
+                    break;
+            case 2: q.deQueue();
+                    break;
+            case 3: q.traversal();
+                    break;
+            case 4: exit(0);
+            default: cout<<"Invalid Choice Entered\n";
+        }
+    }
+    while(true);
+    return 0;
 }

@@ -16,6 +16,10 @@ This is a repository containing various C++ Programs to understand the basic con
 
   C++ Code for implementing a queue using single stack (using recursion).
 
+* [Stack Implementation](https://github.com/altruistcoder/Data-Structures/blob/master/Stack/stack.cpp):
+
+  C++ Code for implemention of a stack.
+
 * [Stack Using Two Queues](https://github.com/altruistcoder/Data-Structures/blob/master/Stack/stack_using_two_queues.cpp):
 
   C++ Code for implementing a stack using two queues.

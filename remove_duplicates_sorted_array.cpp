@@ -1,15 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int removeDuplicates(int arr[], int n)
+int removeDuplicates(int a[], int n)
 {
-    if(n==0 || n==1)
+    if(n==0||n==1)
         return n;
-    int j = 0;
+    int j=0;
     for(int i=0; i<n-1; i++)
-        if(arr[i] != arr[i+1])
-            arr[j++] = arr[i];
-    arr[j++] = arr[n-1];
+        if(a[i] != a[i+1])
+            a[j++] = a[i];
+    a[j++] = a[n-1];
     return j;
 }
 

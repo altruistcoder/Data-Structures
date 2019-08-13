@@ -134,3 +134,7 @@ This is a repository containing various C++ Programs to understand the basic con
 
   C++ Code for finding the first non-repeating character present in the given string.
 
+* [Remove Duplicates from a Sorted Array](https://github.com/altruistcoder/Data-Structures/blob/master/remove_duplicates_sorted_array.cpp):
+
+  C++ Code for removing duplicate elements present in a sorted array.
+

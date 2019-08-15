@@ -138,3 +138,7 @@ This is a repository containing various C++ Programs to understand the basic con
 
   C++ Code for removing duplicate elements present in a sorted array.
 
+* [Check Binary Representation of a number is Palidrome or not](https://github.com/altruistcoder/Data-Structures/blob/master/binary_palindrome.cpp):
+
+  C++ Code for checking whether binary representation of a number is palindrome or not.
+

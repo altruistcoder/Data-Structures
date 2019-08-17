@@ -142,3 +142,7 @@ This is a repository containing various C++ Programs to understand the basic con
 
   C++ Code for checking whether binary representation of a number is palindrome or not.
 
+* [Check whether two strings are anagrams of each other](https://github.com/altruistcoder/Data-Structures/blob/master/check_anagrams.cpp):
+
+  C++ Code for checking whether two given strings are anagrams of each other.
+

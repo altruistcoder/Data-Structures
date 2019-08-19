@@ -19,6 +19,11 @@ This is a repository containing various C++ Programs to understand the basic con
   C++ Code for solving Longest Common Subsequence (LCS) problem.
 
 
+* [Linked List Implementation](https://github.com/altruistcoder/Data-Structures/blob/master/Linked%20List/linked_list.cpp):
+
+  C++ Code for implementing a Linked List.
+
+
 * [Queue Implementation](https://github.com/altruistcoder/Data-Structures/blob/master/Queue/queue.cpp):
 
   C++ Code for implemention of a queue.

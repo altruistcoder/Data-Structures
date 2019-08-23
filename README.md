@@ -24,6 +24,11 @@ This is a repository containing various C++ Programs to understand the basic con
   C++ Code for implementing a Linked List.
 
 
+* [Linked List Reversal](https://github.com/altruistcoder/Data-Structures/blob/master/Linked%20List/linked_list_reversal.cpp):
+
+  C++ Code for implementing Linked List reversal.
+
+
 * [Queue Implementation](https://github.com/altruistcoder/Data-Structures/blob/master/Queue/queue.cpp):
 
   C++ Code for implemention of a queue.
